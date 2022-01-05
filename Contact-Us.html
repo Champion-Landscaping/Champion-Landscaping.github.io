@@ -55,6 +55,13 @@
                         <input type="text" name="subject" autocomplete="off" placeholder="Enter your subject" required>
                         <textarea rows="8" name="message" autocomplete="off" placeholder="Type your message" required></textarea>
                         <button type="submit" class="hero-btn red-btn">Send Message</button>
+                       <!-- Honeypot -->
+                        <input type="text" name="_honey" style="display: none;">
+
+                        <!-- Disable Captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <input type="hidden" name="_next" value="https://champlandscaping.ca/Contact-Us.html" >
                     </form>
                 </div>
             </div>
