@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Champion Landscaping</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="Logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="Projects.html">PROJECTS</a></li>
+                        <li><a href="About-Us.html">ABOUT US</a></li>
+                        <li><a href="Contact-Us.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>Quality Landscaping.<br>Guarenteed Satisfaction.</h1>
+                <a href="Contact-Us.html" class="hero-btn">Contact Us</a>
+            </div>
+
+        </section>
+
+
+        <section class="services">
+            <h1>Services We Offer</h1>
+            <p>We offer a variety of different services that you can choose.</p>
+            <div class="row">
+                <div class="services-col">
+                    <h3>Interlocking</h3>
+                    <p><img src="Interlock.png" width="200" height="200"></p>
+                </div>
+                <div class="services-col">
+                    <h3>Asphalt</h3>
+                    <p><img src="Asphalt.png" width="200" height="200"></p>
+                </div>
+                <div class="services-col">
+                    <h3>Gardening</h3>
+                    <p><img src="Gardening.png" width="200" height="200"></p>
+                </div>
+                <div class="services-col">
+                    <h3>And Other Yard Work</h3>
+                    <p><img src="Others.png" width="200" height="200"></p>
+                </div>
+            </div>
+
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
+    </body>
+        <footer> <center><small>&copy; Copyright 2022, Champion Landscaping</small></center></footer> 
+</html>
